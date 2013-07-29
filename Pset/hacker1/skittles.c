@@ -20,6 +20,13 @@ int main(void){
 	int resposta = 0;
 	int i = 0;
 
+	char* vetRespostas[4];
+
+	vetRespostas[0] = "\n\nHaha! Tenho muito mais Skittles do que isso. Tente novamente.";
+	vetRespostas[1] = "\n\nNao tente ser dificil... Adivinhe novamente.";
+	vetRespostas[2] = "\n\nOk, eles nao sao tantos assim. Tente novamente";
+	vetRespostas[3] = "\n\nVoce esta certo! Nom nom nom.";
+
 	printf("\n\n*********  MAQUINA DE SKITTLES  *********");
 	printf("\n\nTente advinhar o numero de skittles existentes neste maquina!");
 	printf("\nDICA** Os numeros variam de 0 a 10 skittles\n");
@@ -30,10 +37,16 @@ int main(void){
 		scanf("%d", &resposta);
 
 		if(resposta == skittles){
-			printf("\n\nVoce esta certo! Nom nom nom nom.");
+			printf("%s", vetRespostas[3]);
 			break;
+		}else if(resposta > skittles){
+			printf("%s", vetRespostas[2]);
+			chances--;
+		}else if(resposta < skittles){
+			printf("%s", vetRespostas[0]);
+			chances--;
 		}else{
-			printf("\n\nHaha! Tente de novo");
+			printf("%s", vetRespostas[1]);
 			chances--;
 		}
 	}
