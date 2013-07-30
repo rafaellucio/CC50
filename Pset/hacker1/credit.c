@@ -1,5 +1,5 @@
 /***************************************************************************
- * skittles.c
+ * credit.c
  *
  * CC50
  * Pset Hacker 1
@@ -13,8 +13,14 @@
 #include <string.h>
 
 int main(void){
+	char* textCard;
+
 	printf("***** Credito Furado ******");
 	printf("\nVamos validar seu cartão de credito!!");
-	printf("\n\nInforme o numero do seu cartao! ATENCAO somente numeros!");
+	printf("\nInforme o numero do seu cartao! ATENCAO somente numeros!");
+
 	printf("\n\nNumeros do cartao: ");
+	scanf("%s", textCard);
+
+	printf("Valor digitado: %.16s\n\n", textCard);
 }
