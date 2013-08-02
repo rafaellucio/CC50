@@ -13,14 +13,14 @@
 #include <string.h>
 
 int main(void){
-	long long int textCard = 0;
+	char textCard[17];
 
-	printf("***** Credito Furado ******");
+	printf("\n***** Credito Furado ******");
 	printf("\nVamos validar seu cartão de credito!!");
 	printf("\nInforme o numero do seu cartao! ATENCAO somente numeros!");
 
 	printf("\n\nNumeros do cartao: ");
-	scanf("%lld", &textCard);
+	fgets(textCard, 16, stdin);
 
-	printf("Valor digitado: %lld \n", textCard);
+	printf("Valor digitado: %s \n", textCard);
 }
