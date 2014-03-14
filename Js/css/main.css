@@ -1,0 +1,31 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.feedbacks{
+	position: relative;
+	min-height: 53px;
+	top: -80px;
+	-webkit-transition: all 0.3 ease 0;
+	-moz-transition: all 0.3 ease 0;
+	-ms-transition: all 0.3 ease 0;
+	-o-transition: all 0.3 ease 0;
+	transition: all 0.3 ease 0;
+}
+
+.feedbacks .alert{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 90;
+}
+
+.feedbacks .alert.active{
+	top: 0;
+}
