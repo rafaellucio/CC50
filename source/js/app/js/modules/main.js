@@ -1,0 +1,3 @@
+define(['globals'], function($){
+	return $;
+});

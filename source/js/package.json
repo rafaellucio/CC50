@@ -1,0 +1,26 @@
+{
+  "name": "cc50",
+  "version": "1.0.0",
+  "description": "CC50",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaellucio/CC50.git"
+  },
+  "keywords": [
+    "CC50"
+  ],
+  "author": "Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaellucio/CC50/issues"
+  },
+  "homepage": "https://github.com/rafaellucio/CC50#readme",
+  "dependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0"
+  }
+}

@@ -1,1 +1,3 @@
 source/c/pset/**/build/*
+source/js/app/bower_components
+source/js/node_modules 
